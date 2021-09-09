@@ -56,7 +56,7 @@ html, body {
 .inline{
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 h1{
