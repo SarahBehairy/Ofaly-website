@@ -1,0 +1,363 @@
+html, body { 
+    height:100%;
+    margin:0;
+    overflow: auto;
+    padding:0; 
+    width:100%;
+    }
+
+.dropbtn {
+    background: white;
+    border: none;
+    color: #9E9E9E;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 16px;
+    right: 20px;
+  }
+
+.dropdown-item{
+    cursor: pointer;
+}
+
+.dropdown-item:hover{
+    background-color: #222;
+}
+    
+.dropdown {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+}
+  
+.dropdown-content {
+  background-color: black;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  display: none;
+  min-width: 160px;
+  position: fixed;
+  right: 20px;
+  top: 40px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  }
+
+.show {
+    display:block;
+}
+
+.inline{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    color: #B22519;
+    font-size: 36px;
+    text-align: center;
+}
+
+.img-wrap{
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 30%;
+}
+
+.img{
+    cursor: pointer;
+    height: 200px;
+    width: 250px;
+}
+
+.row{
+    display: flex;  
+}
+
+.img-num{
+    text-align: center;
+}
+
+.img-section{
+    background-color: black;
+    display: none;
+    height: 100vh;
+}
+
+.hide{
+    display: none;
+}
+
+.inline{
+    padding: 20px;
+}
+
+.title{
+    font-family: "Days One";
+    font-size: 72px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.desc{
+    font-family: Cairo;
+    font-size: 30px;
+    line-height: 1em;
+}
+
+.img-num{
+    font-family: Cairo;
+    font-size: 20px;
+}
+
+.text{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    width: 30em;
+}
+
+.modal {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    width: 100vw;
+}
+
+.modal.open {
+      opacity: 1;
+      transition-delay: 0s;
+      visibility: visible;
+}
+   
+.modal-bg {
+      background: white;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+}
+    
+.modal-container {
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 30px;
+    position: relative;
+}
+    
+.modal.modal-close {
+    appearance: none;
+    background: none;
+    border: 0;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.modal-exit{
+    background: transparent;
+    border: none;
+    color: #9E9E9E;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    height: 30px;
+    margin: 12px 0;
+    width: 30px;
+}
+
+.large-img{
+    height: 75vh;
+    width: 90%;
+}
+
+.img-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.imgs-container{
+    padding: 50px 10px;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+.jobs{
+    text-align: center;
+}
+
+.jobs-title{
+    color: black;
+    font-family: Cairo;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 135px;
+    margin-bottom: 0;
+}
+
+h5{
+    font-family: Cairo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 66px;
+    margin: 0;
+    text-align: center;
+}
+
+.blue{
+    color: #437CB7;
+}
+
+.job{
+    font-family: Cairo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 34px;
+    margin: 0;
+    text-align: center;
+}
+
+.social{
+    color: #437CB7;
+    cursor: pointer;
+    font-family: Cairo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    line-height:36px;
+    margin: 0;
+    text-align: center;
+}
+
+.contact-us{
+    color: #000000;
+    font-family: Cairo;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.email{
+    color: black;
+    font-family: Cairo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+}
+
+.watermark{
+    color: black;
+    display: block;
+    font-family: Cairo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
+
+.jobs-section{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.img-text{
+    font-family: Cairo;
+    font-size: 18px;
+    line-height: 1.2em;
+    text-align: center;
+    width: 90%;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .main-img{
+        height: 33%;
+        max-width: 300px;
+    }
+
+    .inline{
+        flex-direction: column;
+    }
+    .title{
+        font-size: 50px;
+    }
+
+    .desc {
+        font-size: 20px;
+    }
+
+    .text{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 20em;
+    }
+
+    .img-wrap{
+        display: inline-flex;
+        width: 40%;
+    }
+
+    .large-img{
+        height: 40vh;
+        width: 100%;
+    }
+    .img{
+        cursor: pointer;
+        height: 150px;
+        width: 100%;
+    }
+        .section{
+        height: 100vh !important;
+    }
+}
+
+@media screen and (min-width: 412px){
+    .main-img{
+        max-width: 550px;
+    }
+}
+
+@media screen and (min-width:412px) and (max-width: 1024px) {
+    .section{
+        height: unset !important;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .section{
+        height: 100vh !important;
+    }
+}
