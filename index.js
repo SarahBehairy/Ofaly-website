@@ -1,8 +1,8 @@
-const div = document.getElementsByClassName('dropdown-content');
-const clickedImgIndex =1;
-const image = document.querySelectorAll('img');
-const modals = document.querySelectorAll('div.img-wrap');
-const largeImg = document.getElementById("large-img");
+var div = document.getElementsByClassName('dropdown-content');
+var modals = document.querySelectorAll('div.img-wrap');
+var largeImg = document.getElementById("large-img");
+var clickedImgIndex =1;
+var image = document.querySelectorAll('img');
 
 function openDropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
