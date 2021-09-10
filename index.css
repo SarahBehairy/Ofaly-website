@@ -11,7 +11,6 @@ html, body {
     border: none;
     color: #9E9E9E;
     cursor: pointer;
-    font-size: 16px;
     padding: 16px;
     right: 20px;
   }
@@ -22,6 +21,7 @@ html, body {
 
 .dropdown-item:hover{
     background-color: #222;
+    font-weight: bold;
 }
     
 .dropdown {
@@ -46,6 +46,7 @@ html, body {
   color: white;
   display: block;
   padding: 12px 16px;
+  text-align: center;
   text-decoration: none;
   }
 
@@ -61,7 +62,7 @@ html, body {
 
 h1{
     color: #B22519;
-    font-size: 36px;
+    font-size: 34px;
     text-align: center;
 }
 
@@ -99,7 +100,8 @@ h1{
 }
 
 .inline{
-    padding: 20px;
+    padding: 50px;
+    padding-top: 0;
 }
 
 .title{
@@ -195,6 +197,7 @@ h1{
     display: flex;
     justify-content: center;
     padding: 20px;
+    width: 60%;
 }
 
 .imgs-container{
@@ -258,7 +261,7 @@ h5{
 .contact-us{
     color: #000000;
     font-family: Cairo;
-    font-size: 50px;
+    font-size: 72px;
     font-style: normal;
     font-weight: normal;
     margin-bottom: 15px;
@@ -280,6 +283,7 @@ h5{
     font-size: 18px;
     font-style: normal;
     font-weight: normal;
+    line-height: 1em;
     margin: 0;
     text-align: center;
 }
@@ -293,19 +297,29 @@ h5{
 
 .img-text{
     font-family: Cairo;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.2em;
     text-align: center;
     width: 90%;
 }
 
+.main-img{
+    width: 100%;
+}
+
+.section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exit-wrapper{
+    text-align: end;
+    width: 90%;
+}
+
 @media screen and (max-width: 1024px) {
-
-    .main-img{
-        height: 33%;
-        max-width: 300px;
-    }
-
     .inline{
         flex-direction: column;
     }
@@ -339,25 +353,17 @@ h5{
         height: 150px;
         width: 100%;
     }
-        .section{
-        height: 100vh !important;
+
+    .contact-us{
+        font-size: 50px;
     }
 }
 
-@media screen and (min-width: 412px){
-    .main-img{
-        max-width: 550px;
+ @media screen and (max-width: 450px){
+    .img-wrapper{
+        width: 100%;
     }
-}
-
-@media screen and (min-width:412px) and (max-width: 1024px) {
-    .section{
-        height: unset !important;
-    }
-}
-
-@media screen and (min-width: 1024px){
-    .section{
-        height: 100vh !important;
+    .img-text{
+        font-size: 20px;
     }
 }
