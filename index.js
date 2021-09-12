@@ -44,7 +44,7 @@ modals.forEach(function(trigger) {
   trigger.addEventListener('click', function(event) {
     event.preventDefault();
     const modal = document.getElementById('modal-one');
-    largeImg.src = './' + clickedImgIndex + '.JPG'; 
+    largeImg.src = './assets/' + clickedImgIndex + '.JPG'; 
     modal.classList.add('open');
     const exits = modal.querySelectorAll('.modal-exit');
     exits.forEach(function(exit) {
