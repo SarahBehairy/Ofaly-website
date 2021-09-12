@@ -11,9 +11,8 @@ html, body {
     border: none;
     color: #9E9E9E;
     cursor: pointer;
-    font-size: 2rem;
-    padding: 16px 35px;
-    right: 20px;
+    font-size: 1.8rem;
+    padding: 35px 35px 16px;
   }
 
 .dropdown-item{
@@ -79,10 +78,24 @@ h1{
     width: 30%;
 }
 
+.center{
+    align-items: center;
+}
+
+.start{
+    align-items: flex-start;
+}
+
+.end{
+    align-items: flex-end;
+}
+
 .img{
     cursor: pointer;
-    height: 200px;
-    width: 250px;
+    height: 250px;
+    width: 210px;
+    background-position-x: 50% !important;
+    background-size: cover !important;
 }
 
 .row{
@@ -90,13 +103,15 @@ h1{
 }
 
 .img-num{
+    margin-top: 0;
     text-align: center;
+    width: 210px;
 }
 
 .img-section{
     background-image: url("./assets/bg-2.png");
     background-size: cover;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,15 +123,15 @@ h1{
 
 .title{
     font-family: "Days One";
-    font-size: 70px;
+    font-size: 60px;
+    font-weight: normal;    
     margin: 0;
     text-align: center;
 }
 
 .desc{
     font-family: Cairo;
-    font-size: 30px;
-    line-height: 1.15em;
+    font-size: 15px;
     margin-bottom: 0;
 }
 
@@ -129,8 +144,8 @@ h1{
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    width: 25em;
+    padding: 2% 2% 0 2%;
+    width: 33%;
 }
 
 .modal {
@@ -205,8 +220,8 @@ h1{
 .img-wrapper{
     display: flex;
     justify-content: center;
-    height: 80vh;
-    padding: 20px;
+    padding: 0 20px;
+    width: 65%;
 }
 
 .imgs-container{
@@ -325,9 +340,8 @@ h5{
 .main-section{
     align-items: center;
     background-image: url("./assets/bg-1.png");
-    background-size: cover;
+    background-size: 100%;
     display: flex;
-    min-height: 100vh;
     justify-content: flex-start;
 }
 
@@ -377,10 +391,23 @@ h5{
     }
 }
 
+.main-img{
+    max-width: 95%;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
  @media screen and (max-width: 450px){
+
+    .desc{
+        font-size: 16px !important;
+        line-height: 1.4rem;
+    }
 
     .main-img{
         width: 90%;
+        padding-left: 0; 
+        padding-top: 0;
     }
 
     .main-section{
@@ -427,5 +454,60 @@ h5{
     }
     .dropbtn{
         font-size: 1.5rem;
+    }
+
+    .imgs-container{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1090px) {
+    .desc{
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (min-width: 1090px) and (max-width: 1179px) {
+    .desc{
+        font-size: 19px !important;
+    }
+}
+
+@media screen and (min-width: 1179px) and (max-width: 1224px) {
+    .desc{
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (min-width: 1224px) and (max-width: 1275px) {
+    .desc{
+        font-size: 21px !important;
+    }
+}
+
+@media screen and (min-width: 1275px) and (max-width: 1324px) {
+    .desc{
+        font-size: 22px !important;
+    }
+}
+
+@media screen and (min-width: 1324px) and (max-width: 1424px) {
+    .desc{
+        font-size: 23px !important;
+    }
+}
+@media screen and (min-width: 1390px) and (max-width: 1580px){
+    .desc{
+        font-size: 25px !important;
+    }
+}
+@media screen and (min-width: 1582px) and (max-width: 1690px){
+    .desc{
+        font-size: 28px !important;
+    }
+}
+@media screen and (min-width: 1690px){
+    .desc{
+        font-size: 30px !important;
     }
 }
