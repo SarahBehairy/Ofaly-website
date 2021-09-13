@@ -28,7 +28,7 @@ html, body {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    width: 100%;
+    width: 93%;
 }
   
 .dropdown-content {
@@ -36,12 +36,13 @@ html, body {
   border-radius: 5px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   display: none;
-  min-width: 160px;
+  min-width: 15%;
   padding: 5px 0;
-  position: fixed;
-  right: 20px;
-  top: 40px;
+  position: absolute;
+  right: 2%;
+  top: 43%;
   z-index: 1;
+  font-size: 2rem;
 }
 
 .dropdown-content a {
@@ -74,7 +75,6 @@ h1{
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
     width: 30%;
 }
 
@@ -92,10 +92,7 @@ h1{
 
 .img{
     cursor: pointer;
-    height: 250px;
-    width: 210px;
-    background-position-x: 50% !important;
-    background-size: cover !important;
+    max-width: 65%;
 }
 
 .row{
@@ -103,14 +100,13 @@ h1{
 }
 
 .img-num{
-    margin-top: 0;
     text-align: center;
-    width: 210px;
+    width: 65%;
 }
 
 .img-section{
     background-image: url("./assets/bg-2.png");
-    background-size: cover;
+    background-size: 100%;
     min-height: 80vh;
     display: flex;
     justify-content: center;
@@ -133,6 +129,8 @@ h1{
     font-family: Cairo;
     font-size: 15px;
     margin-bottom: 0;
+    margin-top: 10px;
+
 }
 
 .img-num{
@@ -144,8 +142,8 @@ h1{
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    padding: 2% 2% 0 2%;
-    width: 33%;
+    padding-right: 5.5%;
+    width: 28%;
 }
 
 .modal {
@@ -220,12 +218,11 @@ h1{
 .img-wrapper{
     display: flex;
     justify-content: center;
-    padding: 0 20px;
-    width: 65%;
+    width: 62%;
 }
 
 .imgs-container{
-    padding: 50px 10px;
+     padding:2% 8px 0;
 }
 
 .wrapper{
@@ -312,16 +309,17 @@ h5{
 
 .jobs-section{
     background-image: url('./assets/bg-3.png');
-    background-size: cover;
+    background-size: 100%;
     align-items: center;
     display: flex;
     height: 100vh;
     justify-content: center;
+
 }
 
 .contact-section{
     background-image: url('./assets/bg-4.png');
-    background-size: cover;
+    background-size: 100%;;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -338,6 +336,7 @@ h5{
 }
 
 .main-section{
+    min-height: 100vh;
     align-items: center;
     background-image: url("./assets/bg-1.png");
     background-size: 100%;
@@ -374,7 +373,7 @@ h5{
 
     .img-wrap{
         display: inline-flex;
-        width: 40%;
+        width: 48%;
     }
 
     .large-img{
@@ -382,8 +381,6 @@ h5{
     }
     .img{
         cursor: pointer;
-        height: 100px;
-        width: 100%;
     }
 
     .contact-us{
@@ -392,16 +389,25 @@ h5{
 }
 
 .main-img{
-    max-width: 95%;
-    padding-left: 10%;
-    padding-top: 5%;
+    padding-left: 12%;
+    padding-top: 7%;
+    width: 95%;
 }
 
  @media screen and (max-width: 450px){
 
+    .img{
+        max-width: 80%;
+    }
+
+    .img-num{
+        width: 80%;
+        margin-top: 0;
+    }
+
     .desc{
-        font-size: 16px !important;
-        line-height: 1.4rem;
+        font-size: 18px !important;
+        line-height: 1.8rem;
     }
 
     .main-img{
@@ -413,6 +419,16 @@ h5{
     .main-section{
         background-size: 100% auto;
         background-repeat: no-repeat;
+        height: 100vh;
+        min-height: 100vh;
+    }
+
+    .start{
+        align-items: center;
+    }
+
+    .end{
+        align-items: center;
     }
 
     .modal-wrap{
@@ -453,7 +469,13 @@ h5{
         font-size: 20px;
     }
     .dropbtn{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+    }
+    
+    .dropdown-content{
+        font-size: 1rem;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .imgs-container{
@@ -464,50 +486,155 @@ h5{
 @media screen and (min-width: 1024px) and (max-width: 1090px) {
     .desc{
         font-size: 18px !important;
+        line-height: 1.9rem;
+
+    }
+    .title{
+        font-size: 54px;
+    }
+    .dropdown-content{
+        font-size: 1rem;
     }
 }
 
-@media screen and (min-width: 1090px) and (max-width: 1179px) {
+@media screen and (min-width: 1090px) and (max-width: 1160px) {
     .desc{
         font-size: 19px !important;
+        line-height: 2rem;
+        
+    }
+    .title{
+        font-size: 55px;
+    }
+    .dropdown-content{
+        font-size: 1rem;
     }
 }
 
-@media screen and (min-width: 1179px) and (max-width: 1224px) {
+@media screen and (min-width: 1160px) and (max-width: 1220px) {
     .desc{
         font-size: 20px !important;
+        line-height: 2.1rem;
+
+    }
+    .dropdown-content{
+        font-size: 1rem;
     }
 }
 
-@media screen and (min-width: 1224px) and (max-width: 1275px) {
+@media screen and (min-width: 1220px) and (max-width: 1275px) {
     .desc{
         font-size: 21px !important;
+        line-height: 2.2rem;
+
+    }
+
+    .title{
+        font-size: 63px;
+    }
+    .dropdown-content{
+        font-size: 1.2rem;
     }
 }
 
 @media screen and (min-width: 1275px) and (max-width: 1324px) {
     .desc{
         font-size: 22px !important;
+        line-height: 2.3rem;
+        
+    }
+    .title{
+        font-size: 65px;
+    }
+    .dropdown-content{
+        font-size: 1.4rem;
     }
 }
 
 @media screen and (min-width: 1324px) and (max-width: 1424px) {
     .desc{
         font-size: 23px !important;
+        
+    }
+    .dropdown-content{
+        font-size: 1.4rem;
     }
 }
-@media screen and (min-width: 1390px) and (max-width: 1580px){
+@media screen and (min-width: 1390px) and (max-width: 1498px){
     .desc{
         font-size: 25px !important;
+        line-height: 2.5rem;
+        
+    }
+    .title{
+        font-size: 71px;
+    }
+    .dropdown-content{
+        font-size: 1.4rem;
     }
 }
+
+@media screen and (min-width: 1498px) and (max-width: 1582px){
+    .desc{
+        font-size: 25px !important;
+        line-height: 2.8rem;
+        
+    }
+    .title{
+        font-size: 80px;
+    }
+    .dropdown-content{
+        font-size: 1.4rem;
+    }
+}
+
 @media screen and (min-width: 1582px) and (max-width: 1690px){
     .desc{
         font-size: 28px !important;
+        line-height: 2.8rem;
+    }
+
+    .title{
+        font-size: 84px;
+    }
+    .dropdown-content{
+        font-size: 1.4rem;
     }
 }
 @media screen and (min-width: 1690px){
     .desc{
-        font-size: 30px !important;
+        font-size: 34px !important;
+        line-height: 3.5rem;
+    }
+    .dropbtn{
+        font-size: 3rem;
+    }
+    .main-section{
+        min-width: 1920px;
+        min-height: 1080px;
+    }
+
+    .img-section{
+        min-width: 1920px;
+        min-height: 1080px;
+    }
+
+    .title{
+        font-size: 98px;
+    }
+
+    .img-num{
+        margin-bottom: 8%;
+        font-size: 24px;
+    }
+
+    .img-text{
+        font-size: 33px;
+        line-height: 1.5em;    
+    }
+
+    .modal-exit{
+        font-size: 33px;
+        height: unset;
     }
 }
